@@ -65,7 +65,11 @@ public class Pred2_Zadatak4 {
                     break;
                 case "d":
                 case "D":
-                    System.out.println("Your result is: " + divide(userInput1, userInput2));
+                    if (userInput2 == 0) {
+                        System.out.println("Cannot divide with 0!");
+                    } else {
+                        System.out.println("Your result is: " + divide(userInput1, userInput2));
+                    }
                     break;
                 default:
                     System.out.println("Cannot recognize the operation!");
